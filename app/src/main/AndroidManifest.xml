@@ -12,7 +12,7 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.Study_buddy">
         <activity
-            android:name=".hal3005"
+            android:name=".HAL3005"
             android:exported="false" />
         <activity
             android:name=".HAL3004"

@@ -26,11 +26,11 @@ class HAL3004 : AppCompatActivity() {
         titleUsername = findViewById(R.id.testView)
         button4 = findViewById(R.id.nextButton2)
 
-        val name = intent.getStringExtra("username")
+        val name = intent.getStringExtra("username2")
         titleUsername.text = "Hello. ${name ?: "userguy"}."
 
         button4.setOnClickListener {
-            val hal3005 = Intent(this, hal3005::class.java)
+            val hal3005 = Intent(this, HAL3005::class.java)
             hal3005.putExtra("username2", name)
             startActivity(hal3005)
         }

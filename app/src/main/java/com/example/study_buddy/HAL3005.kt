@@ -9,7 +9,7 @@ import androidx.appcompat.app.AppCompatActivity
 import androidx.core.view.ViewCompat
 import androidx.core.view.WindowInsetsCompat
 
-class hal3005 : AppCompatActivity() {
+class HAL3005 : AppCompatActivity() {
     lateinit var displayName : TextView
     lateinit var button5 : Button
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -25,7 +25,7 @@ class hal3005 : AppCompatActivity() {
         displayName = findViewById(R.id.displayName)
         button5 = findViewById(R.id.backButton)
         val usernameTitle = intent.getStringExtra("username2")
-        displayName.text = "Thaks for visiting ${usernameTitle ?: "Userguy"}"
+        displayName.text = "Thanks for visiting ${usernameTitle ?: "Userguy"}"
 
         button5.setOnClickListener {
             val intentBack = Intent(this, MainActivity::class.java)

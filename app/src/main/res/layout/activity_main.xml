@@ -47,7 +47,7 @@
         android:id="@+id/button"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="I cannot do that."
+        android:text="Get Started"
         android:backgroundTint="#FFaa00"
         app:layout_constraintTop_toBottomOf="@id/inputText"
         app:layout_constraintStart_toStartOf="parent"

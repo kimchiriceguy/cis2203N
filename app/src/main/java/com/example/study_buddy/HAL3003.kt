@@ -10,8 +10,8 @@ import androidx.core.view.ViewCompat
 import androidx.core.view.WindowInsetsCompat
 
 class HAL3003 : AppCompatActivity() {
-    lateinit var titleUsername: TextView
-    lateinit var button3: Button
+    lateinit var titleUsername : TextView
+    lateinit var button3 : Button
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -26,8 +26,8 @@ class HAL3003 : AppCompatActivity() {
         titleUsername = findViewById(R.id.testView)
         button3 = findViewById(R.id.button3)
 
-        val name = intent.getStringExtra("username")
-        titleUsername.text = "Hello. ${name ?: "userguy"}."
+        val name = intent.getStringExtra("username2")
+        titleUsername.text = "I'm afraid I can't do that, ${name ?: "userguy"}."
 
         button3.setOnClickListener {
             val hal3004 = Intent(this, HAL3004::class.java)
